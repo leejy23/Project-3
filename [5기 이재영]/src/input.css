@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: theme('colors.scrollbarTrack');
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: theme('colors.scrollbarThumb');
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.scrollbarThumbHover');
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: theme('colors.scrollbarThumbActive');
+}
+
+/* Custom Overlay Color */
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.827); /* 어두운 오버레이 색상 */
+}
